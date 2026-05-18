@@ -102,10 +102,10 @@ function renderDetail(character) {
 
       // Lista de definición con todos los datos del personaje
       el('dl', { class: 'character-detail__list' }, [
-        item('Tipo', character.type || '—'),
-        item('Género', character.gender || '—'),
-        item('Origen', character.origin?.name || '—'),
-        item('Ubicación actual', character.location?.name || '—'),
+        item('Tipo', character.type || '-'),
+        item('Género', character.gender || '-'),
+        item('Origen', character.origin?.name || '-'),
+        item('Ubicación actual', character.location?.name || '-'),
         item('Creado en la API', formatDate(character.created)),
         item('Episodios totales', String(character.episode?.length ?? 0)),
       ]),

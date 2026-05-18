@@ -2,6 +2,8 @@
 // Importa los estilos globales de Sass para que Vite los procese
 import '@sass/main.scss';
 
+import Lenis from 'lenis';
+
 // Importa el router que gestiona la navegación entre secciones
 import { startRouter } from './js/router.js';
 // Importa las funciones del store global necesarias en este módulo
@@ -39,3 +41,10 @@ subscribe((scope) => {
 updateFavoritesBadge();
 // Arranca el router que decide qué vista mostrar según el hash de la URL
 startRouter();
+
+const lenis = new Lenis();
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
