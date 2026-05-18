@@ -9,14 +9,14 @@ SPA que consume la [Rick and Morty API](https://rickandmortyapi.com/) para explo
 
 ## Características
 
-- **Personajes** — grid responsive con búsqueda por nombre, filtro por estado y especie, paginación con "Cargar más"
-- **Episodios** — listado completo de todos los episodios con paginación
-- **Favoritos** — guarda personajes en `localStorage`, persisten entre sesiones
-- **Detalle en modal** — al abrir un personaje muestra sus datos completos y los episodios en los que aparece; al abrir un episodio muestra los personajes que participan
-- **Routing por hash** — navegación sin recarga basada en `window.location.hash` (`#/characters`, `#/episodes`, `#/favorites`)
-- **PWA instalable** — service worker propio, manifest completo, instalable en móvil desde el navegador
-- **Scroll suave** — integración con [Lenis](https://lenis.darkroom.engineering/)
-- **Accesibilidad** — skip link, `aria-current`, `aria-live`, `role="dialog"`, `aria-modal`, gestión del foco en el modal, navegación por teclado
+- **Personajes**: grid responsive con búsqueda por nombre, filtro por estado y especie, paginación con "Cargar más"
+- **Episodios**: listado completo de todos los episodios con paginación
+- **Favoritos**: guarda personajes en `localStorage`, persisten entre sesiones
+- **Detalle en modal**: al abrir un personaje muestra sus datos completos y los episodios en los que aparece; al abrir un episodio muestra los personajes que participan
+- **Routing por hash**: navegación sin recarga basada en `window.location.hash` (`#/characters`, `#/episodes`, `#/favorites`)
+- **PWA instalable**: service worker propio, manifest completo, instalable en móvil desde el navegador
+- **Scroll suave**: integración con [Lenis](https://lenis.darkroom.engineering/)
+- **Accesibilidad**: skip link, `aria-current`, `aria-live`, `role="dialog"`, `aria-modal`, gestión del foco en el modal, navegación por teclado
 
 
 ## Tecnologías
