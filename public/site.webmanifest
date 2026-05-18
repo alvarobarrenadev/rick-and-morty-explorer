@@ -1,6 +1,13 @@
 {
   "name": "Rick and Morty Explorer",
-  "short_name": "Rick and Morty Explorer",
+  "short_name": "RM Explorer",
+  "description": "Explora personajes y episodios de Rick and Morty.",
+  "start_url": "/rick-and-morty-explorer/#/characters",
+  "scope": "/rick-and-morty-explorer/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#0b0e16",
+  "background_color": "#0b0e16",
   "icons": [
     {
       "src": "web-app-manifest-192x192.png",
@@ -13,9 +20,12 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    },
+    {
+      "src": "favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
     }
-  ],
-  "theme_color": "#34a742",
-  "background_color": "#34a742",
-  "display": "standalone"
+  ]
 }

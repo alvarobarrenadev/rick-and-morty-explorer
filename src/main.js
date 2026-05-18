@@ -48,3 +48,11 @@ function raf(time) {
   requestAnimationFrame(raf);
 }
 requestAnimationFrame(raf);
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/rick-and-morty-explorer/sw.js', {
+      scope: '/rick-and-morty-explorer/',
+    });
+  });
+}
