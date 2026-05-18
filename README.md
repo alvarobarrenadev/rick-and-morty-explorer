@@ -6,7 +6,6 @@ SPA que consume la [Rick and Morty API](https://rickandmortyapi.com/) para explo
 
 [https://alvarobarrena.github.io/rick-and-morty-explorer/](https://alvarobarrena.github.io/rick-and-morty-explorer/)
 
----
 
 ## Características
 
@@ -19,7 +18,6 @@ SPA que consume la [Rick and Morty API](https://rickandmortyapi.com/) para explo
 - **Scroll suave** — integración con [Lenis](https://lenis.darkroom.engineering/)
 - **Accesibilidad** — skip link, `aria-current`, `aria-live`, `role="dialog"`, `aria-modal`, gestión del foco en el modal, navegación por teclado
 
----
 
 ## Tecnologías
 
@@ -32,7 +30,6 @@ SPA que consume la [Rick and Morty API](https://rickandmortyapi.com/) para explo
 | [gh-pages](https://github.com/tschaub/gh-pages) | Despliegue en GitHub Pages |
 | [Rick and Morty API](https://rickandmortyapi.com/) | Fuente de datos |
 
----
 
 ## Estructura del proyecto
 
@@ -86,7 +83,6 @@ rick-and-morty-explorer/
 └── package.json
 ```
 
----
 
 ## Instalación y uso
 
@@ -113,7 +109,6 @@ pnpm preview
 pnpm deploy
 ```
 
----
 
 ## Arquitectura JS
 
@@ -137,7 +132,6 @@ Helper `el(tag, attrs, children)` que crea nodos del DOM sin JSX ni templates. A
 
 Estrategia *cache-first* para el app shell y assets estáticos. Las peticiones a `rickandmortyapi.com` siempre van a red para garantizar datos frescos. En cada activación limpia cachés de versiones anteriores.
 
----
 
 ## PWA
 
@@ -150,7 +144,6 @@ La app cumple los criterios de instalabilidad en Chrome y Safari para iOS:
 
 Para instalarla en móvil: abre la URL en el navegador y usa la opción **"Añadir a pantalla de inicio"** del menú del navegador.
 
----
 
 ## Scripts disponibles
 
