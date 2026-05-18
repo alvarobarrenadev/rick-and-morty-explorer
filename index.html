@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explora personajes y episodios de Rick and Morty." />
+    <title>Rick and Morty Explorer</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+
+    <header class="site-header" role="banner">
+      <div class="site-header__inner">
+        <a href="#/characters" class="brand" aria-label="Rick and Morty Explorer — Inicio">
+          <img class="brand__mark" src="/favicon.svg" alt="" aria-hidden="true" width="36" height="36" />
+          <span class="brand__text">Rick &amp; Morty <em>Explorer</em></span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navegación principal">
+          <ul class="main-nav__list">
+            <li><a class="main-nav__link" href="#/characters" data-route="characters">Personajes</a></li>
+            <li><a class="main-nav__link" href="#/episodes" data-route="episodes">Episodios</a></li>
+            <li>
+              <a class="main-nav__link" href="#/favorites" data-route="favorites">
+                Favoritos
+                <span class="badge" id="favorites-count" aria-label="Personajes en favoritos">0</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="app" role="main">
+      <div id="view-root" class="view-root"></div>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Datos cortesía de
+        <a href="https://rickandmortyapi.com/" target="_blank" rel="noopener noreferrer">The Rick and Morty API</a>.
+      </p>
+    </footer>
+
+    <div id="modal-root" class="modal-root" aria-hidden="true"></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
