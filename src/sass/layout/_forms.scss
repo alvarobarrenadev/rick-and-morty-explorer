@@ -69,4 +69,9 @@ select.input {
   display: flex;
   align-items: stretch;
   gap: v.$space-2;
+
+  .btn {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
 }
