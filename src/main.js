@@ -42,12 +42,17 @@ updateFavoritesBadge();
 // Arranca el router que decide qué vista mostrar según el hash de la URL
 startRouter();
 
-const lenis = new Lenis();
+const lenis = new Lenis({
+  prevent: (node) => node.closest('.modal__dialog') !== null,
+});
 function raf(time) {
   lenis.raf(time);
   requestAnimationFrame(raf);
 }
 requestAnimationFrame(raf);
+
+window.addEventListener('modal:open', () => lenis.stop());
+window.addEventListener('modal:close', () => lenis.start());
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {

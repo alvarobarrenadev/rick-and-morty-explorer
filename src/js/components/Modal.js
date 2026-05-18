@@ -74,6 +74,7 @@ export function openModal({ title, content, labelledBy = 'modal-title' }) {
   host.appendChild(overlay);
   // Bloquea el scroll del body mientras el modal esté abierto
   document.body.classList.add('is-modal-open');
+  window.dispatchEvent(new CustomEvent('modal:open'));
   // Registra el listener de teclado para detectar la tecla Escape
   document.addEventListener('keydown', onKeyDown);
 
@@ -107,6 +108,7 @@ export function closeModal() {
   clear(host);
   host.setAttribute('aria-hidden', 'true');
   document.body.classList.remove('is-modal-open');
+  window.dispatchEvent(new CustomEvent('modal:close'));
   // Elimina el listener de teclado que se creó al abrir el modal
   document.removeEventListener('keydown', onKeyDown);
   activeModal = null;
